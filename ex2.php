@@ -16,6 +16,13 @@
      }
          basic();
     ?>
-     
+    <h2>parameter &amp; argument</h2>
+    <?php
+    function sum($left, $right){
+        print($left+$right);
+        print("<br>");
+    }
+     sum(2,4);
+     ?>
 </body>
 </html>
