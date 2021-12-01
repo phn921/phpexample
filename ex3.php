@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>function</title>
+    <title>String and Operation</title>
 </head>
 
 <body>
@@ -21,6 +21,20 @@
     print "substr() function use : $tel1  $tel2  $tel3 <br>";
     $phone = explode("-", $tel);
     print "explode() function use :$phone[0] $phone[1] $phone[2]<br>";
+
+    function sigma($a, $b)
+    {
+        $sum = 0;
+        for ($i = $a; $i <= $b; $i++)
+            $sum += $i;
+        return $sum;
+    }
+    $a = 1;
+    $b = 100;
+    $total = sigma($a, $b);
+    print "From $a to $b = $total";
+
+
     ?>
 </body>
 
