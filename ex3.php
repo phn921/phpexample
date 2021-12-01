@@ -33,9 +33,14 @@
     $b = 100;
     $total = sigma($a, $b);
     print "From $a to $b = $total";
-
-
     ?>
+    <form method="get" action="sigma">
+        From
+        <input type="number" name="from" autofocus required size="3">
+        To
+        <input type="number" name="to" required size="3">
+        <input type="submit" value="sum">
+    </form>
 </body>
 
 </html>
